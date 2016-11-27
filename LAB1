@@ -12,9 +12,10 @@ int k=1;
 printf("%3c%9c%15c\n",'k','t','s');
 printf("%3d%c%15e%12.5f\n",k,' ',t,sum);
 do{
+	k++;
 	t=t*(pow(-1,k))*((pow(x,2))/(2*k*(2*k-1)));
 	sum=sum+t;
-	k++;
+	
 	printf("%3d%c%15e%12.5f\n",k,' ',t,sum);
 }while(fabs(t)>eps);
 cout<<"Конечная сумма="<<sum<<endl;
